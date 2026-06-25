@@ -1321,7 +1321,7 @@
         </div>
 
         <div class="project-card scroll-reveal">
-          <img src="assets/img/project-quizup-logo-1.png" alt="https://github.com/prashannapr56-byte/hostel-management" class="project-img" />
+          <img src="assets/img/project-quizup-logo-1.png" alt="Hostel Management System" class="project-img" />
           <div class="project-body">
             <div class="project-title">Hostel Management System</div>
             <div class="project-desc">A comprehensive hostel management system developed to enhance hostel operations with room allocation, student records, and billing management.</div>
@@ -1329,8 +1329,8 @@
               <span>HTML5</span><span>CSS3</span><span>React</span><span>Node.js</span><span>SQL</span>
             </div>
             <div class="project-links">
-              <a href="https://stay-track-hostel-management.vercel.app/" class="project-link"><i class="https://stay-track-hostel-management.vercel.app/"></i> Live</a>
-              <a href="https://github.com/prashannapr56-byte/stay-track-hostel-management" class="project-link"><i class="https://github.com/prashannapr56-byte/stay-track-hostel-management"></i> Code</a>
+              <a href="https://stay-track-hostel-management.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa fa-external-link"></i> Live</a>
+              <a href="https://github.com/prashannapr56-byte/stay-track-hostel-management" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Code</a>
             </div>  
           </div>
         </div>
@@ -1533,33 +1533,15 @@
       revealObserver.observe(element);
     });
 
-    // 3D Flip card animation on hover (desktop) and touch (mobile)
+    // 3D Flip card animation on hover (desktop)
     projectCards.forEach(card => {
-      let isTouching = false;
-
       // Mouse events for desktop
       card.addEventListener('mouseenter', () => {
-        if (!isTouching) {
-          card.style.transform = 'translateY(-12px) rotateX(5deg) rotateY(-8deg) rotateZ(2deg)';
-        }
+        card.style.transform = 'translateY(-12px) rotateX(5deg) rotateY(-8deg) rotateZ(2deg)';
       });
 
       card.addEventListener('mouseleave', () => {
-        if (!isTouching) {
-          card.style.transform = 'translateY(0) rotateX(0) rotateY(0) rotateZ(0)';
-        }
-      });
-
-      // Touch events for mobile
-      card.addEventListener('touchstart', (e) => {
-        isTouching = true;
-        card.style.transform = 'translateY(-12px) rotateX(5deg) rotateY(-8deg) scale(1.02)';
-        e.preventDefault();
-      });
-
-      card.addEventListener('touchend', () => {
-        isTouching = false;
-        card.style.transform = 'translateY(0) rotateX(0) rotateY(0) scale(1)';
+        card.style.transform = 'translateY(0) rotateX(0) rotateY(0) rotateZ(0)';
       });
     });
 
