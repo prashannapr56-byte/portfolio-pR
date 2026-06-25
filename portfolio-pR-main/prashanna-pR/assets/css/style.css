@@ -1,0 +1,767 @@
+/* =========================================================
+   PROFILE PIC
+   ========================================================= */
+.profile-pic {
+  position: relative;
+  max-width: 130px;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 6px solid rgba(0, 77, 64, 0.4);
+  border-radius: 50% !important;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   TRACKER
+   ========================================================= */
+.tracker {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* =========================================================
+   FONTS & SOCIAL ICONS
+   ========================================================= */
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.github {
+  color: black;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.angellist {
+  color: grey;
+}
+
+.icon-btn:hover {
+  transform: scale(1.10);
+  color: #FFFFFF;
+}
+
+.linkedin:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.angellist:hover {
+  background-color: grey;
+}
+
+.github:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/* =========================================================
+   BUTTONS - Read More / Contact Me
+   ========================================================= */
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.readme {
+  padding: 11px 35px;
+  background: #fff;
+  color: #00796b;
+  border: 2px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.readme:hover {
+  color: white;
+  background-color: #00796b;
+  border-color: #00796b;
+}
+
+.contactme {
+  padding: 11px 35px;
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.contactme:hover {
+  color: #00796b;
+  background-color: white;
+}
+
+/* =========================================================
+   BODY
+   ========================================================= */
+body {
+  color: #333;
+  font-size: 18px;
+}
+
+a {
+  color: #004d40;
+}
+
+/* =========================================================
+   BLOCKQUOTE
+   ========================================================= */
+blockquote {
+  border-left: 5px solid #795548;
+  color: #795548;
+  font-size: 125%;
+  font-weight: 400;
+  margin: 20px 0;
+  padding-left: 1.5rem;
+}
+
+blockquote * {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* =========================================================
+   TEXT UTILITIES
+   ========================================================= */
+.text-center {
+  text-align: center;
+}
+
+/* =========================================================
+   NAV
+   ========================================================= */
+nav {
+  background: white;
+  box-shadow: none;
+  height: 0;
+}
+
+nav i {
+  padding: 0 15px;
+  position: relative;
+  top: 5px;
+}
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+main {
+  background: url(../../assets/img/bg.png) repeat;
+  padding-left: 190px;
+}
+
+/* =========================================================
+   DL / DD / DT
+   ========================================================= */
+dl {
+  margin-top: 0.5rem;
+}
+
+dd {
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 0;
+}
+
+dt {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+/* =========================================================
+   SIDE NAV
+   ========================================================= */
+ul.side-nav {
+  width: 190px;
+}
+
+ul.side-nav li {
+  padding: 0;
+}
+
+ul.side-nav.fixed a {
+  box-sizing: content-box;
+  color: rgb(16, 202, 56);
+  display: block;
+  line-height: 100%;
+  padding: 10px 0 12px;
+}
+
+ul.table-of-contents li.logo a.active,
+ul.table-of-contents li.logo a:hover {
+  border: none;
+  font-weight: 200;
+}
+
+ul.side-nav.fixed li.logo {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 20px 15px 25px;
+  text-align: center;
+}
+
+ul.side-nav.fixed li.logo a {
+  font-weight: 200;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.table-of-contents li:not(.logo) a.active,
+ul.table-of-contents li:not(.logo) a:hover {
+  background-color: #fafafa;
+  border-left: 3px solid;
+}
+
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+ul#slide-out li:not(.logo) a span {
+  color: #333 !important;
+}
+
+li.logo span {
+  display: block;
+  font-size: 14px;
+}
+
+.brand-logo h1 {
+  font-size: inherit;
+  line-height: inherit;
+  margin: inherit;
+  font-weight: inherit;
+}
+
+/* =========================================================
+   CONTAINER & HEADINGS
+   ========================================================= */
+.container {
+  width: 95%;
+}
+
+h3 {
+  font-weight: 200;
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding: 30px 40px;
+  text-transform: uppercase;
+}
+
+.section {
+  padding-bottom: 30px;
+  padding-top: 0;
+  position: relative;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/* =========================================================
+   INTRO / HERO SECTION
+   ========================================================= */
+#intro.section {
+  background: #a7ffeb repeat;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#intro.section .container {
+  color: white;
+  font-weight: 200;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+#intro.section .container *:not(span) {
+  font-weight: 300;
+  line-height: 150%;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#intro.section .underline {
+  border-bottom: 5px solid #24305e;
+}
+
+#intro.section .teal {
+  padding: 0 10px;
+}
+
+/* Hero content wrapper alignment */
+.content.section-padding.valign {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  padding: 30px 0;
+}
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* =========================================================
+   WAVES EFFECT
+   ========================================================= */
+.waves-effect.waves-blue .waves-ripple {
+  background-color: rgba(33, 150, 243, 0.2);
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+.card {
+  margin-bottom: 60px;
+}
+
+.card .role {
+  font-size: 1.1rem;
+  color: #795548;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.card li a {
+  margin-right: 0;
+  color: #333;
+  border-bottom: 2px solid #ffab40;
+}
+
+.card li a:hover {
+  color: #333;
+  font-weight: 500;
+}
+
+.card .card-content {
+  padding-bottom: 30px;
+}
+
+.card .card-content p {
+  padding: 5px 0 0;
+}
+
+.card h5 {
+  font-size: 1.5rem;
+  margin-bottom: -0.5rem;
+  margin-top: 2rem;
+}
+
+.card h6 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+#experience .card-action {
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+}
+
+#experience .card .col.s12.m2 a {
+  display: block;
+}
+
+#experience .card .col.s12.m2 a img {
+  max-height: 60px;
+}
+
+.card-action span {
+  font-size: 85%;
+  color: #666;
+}
+
+.card ul {
+  margin-bottom: 0;
+}
+
+.card ul li {
+  line-height: 200%;
+  list-style-type: disc;
+  margin-left: 24px;
+}
+
+.card ul li li {
+  color: #666;
+  font-size: 13px;
+}
+
+.card .card-title {
+  font-size: 24px;
+}
+
+.card .card-content .card-title {
+  line-height: 2.5rem;
+}
+
+.card i.right {
+  margin-left: 10px;
+}
+
+/* =========================================================
+   HOVER LINKS
+   ========================================================= */
+a.hoverline {
+  border-bottom: 3px solid transparent !important;
+  padding: 3px 3px 0 3px;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+
+a.hoverline:hover {
+  border-bottom: 3px solid #004d40 !important;
+}
+
+/* =========================================================
+   SKILLS SECTION
+   ========================================================= */
+#skills .card.large {
+  height: 360px;
+}
+
+#skills h4 {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+#skills .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#skills .col img.responsive-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 80px;
+  max-width: 80px;
+  width: auto;
+  padding-bottom: 8px;
+  object-fit: contain;
+}
+
+.card.large .card-content p {
+  color: inherit;
+  margin: 0;
+  padding: 30px 0;
+}
+
+#experience .card-content .row {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.card.large .card-image {
+  height: 230px;
+}
+
+.card.large .card-content {
+  height: auto;
+}
+
+.card.medium .card-image {
+  height: 240px;
+}
+
+.card-action a.btn-floating {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+#contact .container p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+#contact a:not(.btn-floating) {
+  position: static;
+  bottom: auto;
+  left: auto;
+  display: inline;
+  vertical-align: middle;
+}
+
+#experience .col.s12.m2 {
+  text-align: center;
+}
+
+/* =========================================================
+   MISC
+   ========================================================= */
+.fa-external-link:before {
+  left: 3px;
+  position: relative;
+  top: 2px;
+}
+
+small {
+  display: none;
+}
+
+.grey-text {
+  color: #666 !important;
+}
+
+.teal-text {
+  color: #008073 !important;
+}
+
+.teal {
+  background-color: #008073 !important;
+}
+
+/* =========================================================
+   RESPONSIVE - Large screens
+   ========================================================= */
+@media (min-width: 1200px) {
+  #experience .container {
+    width: 860px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .card ul li {
+    font-size: 14px;
+    line-height: 200%;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .card ul li {
+    line-height: 150%;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - Tablet / mobile (≤992px)
+   ========================================================= */
+@media (max-width: 992px) {
+  main {
+    padding-left: 0px;
+    padding-top: 64px;
+  }
+
+  ul.side-nav a {
+    line-height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav {
+    background: #fff;
+    height: 64px;
+    position: absolute;
+  }
+
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    color: #009688;
+    height: 56px;
+    line-height: 56px;
+  }
+
+  h3 {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  nav.hide-on-large.only.trigger {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+
+  .name-title {
+    display: block;
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
+
+  .name-title > span,
+  .name-title > a {
+    position: relative;
+    line-height: 20px;
+  }
+
+  .name-title a {
+    font-size: 22px;
+    display: block;
+  }
+
+  .name-title span {
+    display: block;
+    font-size: 14px;
+  }
+
+  h3,
+  .container {
+    position: relative;
+    top: 64px;
+  }
+
+  section#intro {
+    margin-bottom: -64px;
+  }
+
+  .card .role {
+    position: relative;
+    right: initial;
+    top: initial;
+  }
+
+  /* Hero content - full width on mobile */
+  .content.section-padding.valign {
+    padding: 20px 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #contact .container p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - Mobile (≤600px)
+   ========================================================= */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 22px;
+    line-height: 200%;
+    margin: 30px 0 0;
+  }
+
+  #intro.section .container *:not(span) {
+    padding: 0;
+  }
+
+  .card .card-content .card-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #experience span.card-title {
+    text-align: center;
+    display: block;
+  }
+
+  #experience span.card-title a {
+    margin: 0;
+  }
+
+  i.mdi-navigation-close.right {
+    position: relative;
+    bottom: 15px;
+  }
+
+  #contact .container p {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #contact a:not(.btn-floating) {
+    display: inline;
+  }
+
+  #contact a.btn-floating.btn-large {
+    flex-shrink: 0;
+  }
+
+  #intro.section {
+    background-position-x: 30%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .social {
+    justify-content: flex-start;
+  }
+}
