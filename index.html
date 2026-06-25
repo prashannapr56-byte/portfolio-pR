@@ -919,6 +919,18 @@
       font-size: 26px;
     }
 
+    .edu-logo {
+      width: 60px; height: 60px;
+      border-radius: 12px;
+      border: 1px solid var(--gray-200);
+      overflow: hidden;
+      flex-shrink: 0;
+      background: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      padding: 4px;
+    }
+    .edu-logo img { width: 100%; height: 100%; object-fit: contain; }
+
     .edu-body { flex: 1; }
 
     .edu-degree {
@@ -1386,7 +1398,9 @@
       <h2 class="section-heading">Education</h2>
 
       <div class="edu-card">
-        <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+        <div class="edu-logo">
+          <img src="assets/img/ssec.png" alt="Sree Sakthi Engineering College" />
+        </div>
         <div class="edu-body">
           <div class="edu-degree">Bachelor of Engineering — Computer Science &amp; Engineering</div>
           <div class="edu-college">
